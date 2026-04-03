@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leadership, Social Impact &amp; Community-Strengthening Business</title>
+    <meta
+      name="description"
+      content="Interactive keynote slide deck for the 16th World Leaders Summit at Oxford on leadership, social impact, and building businesses that strengthen communities."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-kicker">Oxford 2026</div>
+          <div class="brand-title">Leadership, Social Impact &amp; Building Businesses That Strengthen Communities</div>
+        </div>
+        <div class="toolbar">
+          <button class="toolbar-btn" id="toggleOverview" type="button">Overview</button>
+          <button class="toolbar-btn" id="toggleNotes" type="button">Script Mode</button>
+          <button class="toolbar-btn toolbar-btn--primary" id="toggleSources" type="button">Sources</button>
+        </div>
+      </header>
+
+      <aside class="slide-rail" aria-label="Slide Navigation">
+        <div class="rail-line"></div>
+        <nav id="slideNav" class="rail-nav"></nav>
+      </aside>
+
+      <div id="overviewPanel" class="overview-panel" aria-hidden="true">
+        <div class="overview-inner">
+          <div class="overview-head">
+            <h2>Deck Overview</h2>
+            <button class="panel-close" type="button" data-close="overviewPanel" aria-label="Close overview">×</button>
+          </div>
+          <div id="overviewGrid" class="overview-grid"></div>
+        </div>
+      </div>
+
+      <aside id="sourcesDrawer" class="sources-drawer" aria-hidden="true">
+        <div class="drawer-head">
+          <div>
+            <div class="drawer-kicker">Research Pack</div>
+            <h2>Slide Sources</h2>
+          </div>
+          <button class="panel-close" type="button" data-close="sourcesDrawer" aria-label="Close sources">×</button>
+        </div>
+        <div class="drawer-tabs">
+          <button class="tab-btn tab-btn--active" type="button" data-source-view="slide">This Slide</button>
+          <button class="tab-btn" type="button" data-source-view="all">All 29 Sources</button>
+        </div>
+        <div id="currentSourceSummary" class="current-source-summary"></div>
+        <div id="sourceList" class="source-list"></div>
+      </aside>
+
+      <main id="deck" class="deck" tabindex="-1">
+        <div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div>
+
+        <section class="slide slide--hero" id="slide-1" data-title="Opening Frame" data-sources="1,6,15,21,28,29">
+          <div class="slide-grid slide-grid--hero">
+            <div class="hero-copy">
+              <div class="eyebrow">16th World Leaders Summit • UK Chapter 2026 • Keble College, Oxford</div>
+              <h1>Leadership that leaves communities stronger</h1>
+              <p class="lede">
+                This keynote reframes business leadership around one test:
+                does the organisation grow only in scale, or does the people-place system around it grow in strength?
+              </p>
+              <div class="presenter-strip">
+                <span class="presenter-strip__label">Presented by</span>
+                <strong>Ms. Edlina Ibrahim</strong>
+                <span class="presenter-strip__meta">Malaysia • Keynote Speaker</span>
+              </div>
+              <div class="quote-band">
+                <span class="quote-band__label">Core Thesis</span>
+                <p>
+                  Leadership social impact begins when leaders redesign how value is created, who participates in it,
+                  and how much of that value stays rooted in people and place.
+                </p>
+              </div>
+              <div class="hero-points">
+                <span>Good jobs</span>
+                <span>Inclusive access</span>
+                <span>Community wealth</span>
+              </div>
+            </div>
+            <div class="hero-graphic">
+              <figure class="cover-poster">
+                <img src="assets/edlina-presentation-cover.png" alt="Presentation edition poster for Ms. Edlina Ibrahim keynote at the 16th World Leaders Summit in Oxford">
+              </figure>
+              <div class="hero-stats">
+                <div class="stat-card">
+                  <span class="stat-card__value">3</span>
+                  <span class="stat-card__label">core pillars for an inclusive economy</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-card__value">29</span>
+                  <span class="stat-card__label">research sources behind the deck</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-note">
+            Use this slide to open with the summit context, establish the Oxford setting, and introduce the central leadership question:
+            not just whether a business grows, but whether the community around it grows stronger because it exists.
+          </div>
+        </section>
+
+        <section class="slide slide--contrast" id="slide-2" data-title="Why This Matters Now" data-sources="6,7,8,11,13,17,23">
+          <div class="slide-head">
+            <div class="eyebrow">The Present Tension</div>
+            <h2>More innovation, but too many communities feel less secure</h2>
+          </div>
+          <div class="tension-grid">
+            <article class="tension-card">
+              <h3>Capital can move fast</h3>
+              <p>Yet local opportunity still moves slowly for families navigating work, skills, finance, and infrastructure.</p>
+            </article>
+            <article class="tension-card">
+              <h3>CSR can be visible</h3>
+              <p>Yet trust remains fragile when core operations still exclude local voices or drain local value.</p>
+            </article>
+            <article class="tension-card">
+              <h3>Growth can be impressive</h3>
+              <p>Yet growth without belonging leaves communities feeling managed, not strengthened.</p>
+            </article>
+            <article class="tension-card">
+              <h3>Innovation can scale</h3>
+              <p>Yet resilience only scales when people, suppliers, and neighbourhood institutions scale with it.</p>
+            </article>
+          </div>
+          <div class="dual-meter">
+            <div class="meter-lane">
+              <span class="meter-lane__label">Old scorecard</span>
+              <div class="meter-track"><div class="meter-fill meter-fill--old"></div></div>
+              <span class="meter-caption">Scale • speed • valuation • share</span>
+            </div>
+            <div class="meter-lane">
+              <span class="meter-lane__label">Emerging scorecard</span>
+              <div class="meter-track"><div class="meter-fill meter-fill--new"></div></div>
+              <span class="meter-caption">Trust • inclusion • resilience • shared prosperity</span>
+            </div>
+          </div>
+          <div class="speaker-note">
+            Frame the contradiction. We are not lacking ambition or technology. We are lacking systems that distribute capability, voice, and resilience more fairly.
+          </div>
+        </section>
+
+        <section class="slide slide--architecture" id="slide-3" data-title="Leadership Is Architecture" data-sources="2,5,6,15,16,18,25,26,27">
+          <div class="slide-head">
+            <div class="eyebrow">Leadership Shift</div>
+            <h2>Community-strengthening business is built, not branded</h2>
+          </div>
+          <div class="architecture-grid">
+            <div class="architecture-stack">
+              <div class="architecture-layer architecture-layer--1">Governance &amp; power</div>
+              <div class="architecture-layer architecture-layer--2">Jobs &amp; value chains</div>
+              <div class="architecture-layer architecture-layer--3">Procurement &amp; ownership</div>
+              <div class="architecture-layer architecture-layer--4">Partnerships &amp; accountability</div>
+            </div>
+            <div class="from-to">
+              <div class="from-to__column">
+                <span class="from-to__label">From</span>
+                <ul>
+                  <li>Impact as philanthropy at the edge</li>
+                  <li>Stakeholders as an audience</li>
+                  <li>Growth measured only at firm level</li>
+                </ul>
+              </div>
+              <div class="from-to__column">
+                <span class="from-to__label">To</span>
+                <ul>
+                  <li>Impact inside the operating model</li>
+                  <li>Communities as co-designers</li>
+                  <li>Success measured at place level too</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-note">
+            Stress that business impact is not mostly about generosity. It is about the architecture of jobs, supply chains, procurement, ownership, and accountability.
+          </div>
+        </section>
+
+        <section class="slide slide--pillars" id="slide-4" data-title="The Three Pillars" data-sources="6,7,8,19,21,29">
+          <div class="slide-head">
+            <div class="eyebrow">Inclusive Economy Framework</div>
+            <h2>Three pillars define the business role in strengthening communities</h2>
+          </div>
+          <div class="pillar-ring">
+            <article class="pillar-card pillar-card--jobs">
+              <span class="pillar-index">01</span>
+              <h3>Good Jobs</h3>
+              <p>Work as dignity, capability, progression, and stability.</p>
+            </article>
+            <article class="pillar-card pillar-card--access">
+              <span class="pillar-index">02</span>
+              <h3>Access</h3>
+              <p>Essential goods, services, finance, and opportunity that enable participation.</p>
+            </article>
+            <article class="pillar-card pillar-card--community">
+              <span class="pillar-index">03</span>
+              <h3>Prosperous Local Communities</h3>
+              <p>Local enterprise, supplier growth, place-based investment, and shared value retention.</p>
+            </article>
+          </div>
+          <div class="speaker-note">
+            Walk the audience through the BSR frame and explain why it is a useful backbone: morally clear, economically credible, and operationally practical.
+          </div>
+        </section>
+
+        <section class="slide slide--interactive" id="slide-5" data-title="Five Operating Levers" data-sources="2,5,7,8,15,16,21,25,26,27">
+          <div class="slide-head">
+            <div class="eyebrow">Operating Model</div>
+            <h2>The five levers of a community-strengthening business</h2>
+          </div>
+          <div class="switch-layout" data-switch-group="levers">
+            <div class="switch-buttons">
+              <button class="switch-btn switch-btn--active" type="button" data-switch-target="jobs">Jobs</button>
+              <button class="switch-btn" type="button" data-switch-target="access">Access</button>
+              <button class="switch-btn" type="button" data-switch-target="procurement">Procurement</button>
+              <button class="switch-btn" type="button" data-switch-target="power">Power-sharing</button>
+              <button class="switch-btn" type="button" data-switch-target="place">Place investment</button>
+            </div>
+            <div class="switch-panels">
+              <article class="switch-panel switch-panel--active" data-panel="jobs">
+                <h3>Jobs are economic infrastructure</h3>
+                <p>Good jobs are not only payroll. They are the pathway through which households gain security, skills, wellbeing, and future confidence.</p>
+              </article>
+              <article class="switch-panel" data-panel="access">
+                <h3>Access turns exclusion into participation</h3>
+                <p>Business can strengthen communities by widening affordable access to finance, education, health, transport, digital tools, and productive services.</p>
+              </article>
+              <article class="switch-panel" data-panel="procurement">
+                <h3>Procurement shapes who grows with you</h3>
+                <p>Supplier development, local sourcing, and fair procurement policies help value circulate through communities instead of leaking away from them.</p>
+              </article>
+              <article class="switch-panel" data-panel="power">
+                <h3>Voice changes legitimacy</h3>
+                <p>Communities become more resilient when they influence decisions early enough to improve them, rather than being consulted only after direction is set.</p>
+              </article>
+              <article class="switch-panel" data-panel="place">
+                <h3>Place-based investment outlasts campaigns</h3>
+                <p>Local enterprise ecosystems, anchor partnerships, cooperative models, and skills institutions create impact that survives leadership cycles.</p>
+              </article>
+            </div>
+          </div>
+          <div class="speaker-note">
+            Tell the audience that procurement, hiring, product access, and accountability are often more powerful than sponsorship when the goal is durable local strength.
+          </div>
+        </section>
+
+        <section class="slide slide--wealth" id="slide-6" data-title="Community Wealth Building" data-sources="21,22,23,24,25,26,27,28,29">
+          <div class="slide-head">
+            <div class="eyebrow">Place-Based Strategy</div>
+            <h2>Anchor institutions can help communities keep more value local</h2>
+          </div>
+          <div class="wealth-diagram">
+            <div class="wealth-core">Anchor Institutions</div>
+            <div class="wealth-node wealth-node--1">Local procurement</div>
+            <div class="wealth-node wealth-node--2">Skills pipelines</div>
+            <div class="wealth-node wealth-node--3">Cooperative ownership</div>
+            <div class="wealth-node wealth-node--4">Social economy finance</div>
+            <div class="wealth-node wealth-node--5">Land &amp; asset strategy</div>
+          </div>
+          <div class="wealth-caption">
+            Community wealth building asks a place-level question:
+            <strong>how much of the value created here remains in the hands of local people and institutions?</strong>
+          </div>
+          <div class="speaker-note">
+            Use this slide to explain why community wealth building is more than donation. It is about procurement, ownership, skills, finance, and local ecosystem design.
+          </div>
+        </section>
+
+        <section class="slide slide--network" id="slide-7" data-title="Stakeholder Inclusion" data-sources="9,11,17,26">
+          <div class="slide-head">
+            <div class="eyebrow">Leadership Capability</div>
+            <h2>Stakeholder inclusion is not PR. It is how legitimacy is built.</h2>
+          </div>
+          <div class="network-stage" data-switch-group="network">
+            <div class="network-map">
+              <button class="network-node network-node--center switch-btn switch-btn--active" type="button" data-switch-target="communities">Business</button>
+              <button class="network-node network-node--a switch-btn" type="button" data-switch-target="communities">Communities</button>
+              <button class="network-node network-node--b switch-btn" type="button" data-switch-target="workers">Workers</button>
+              <button class="network-node network-node--c switch-btn" type="button" data-switch-target="civil">Civil society</button>
+              <button class="network-node network-node--d switch-btn" type="button" data-switch-target="public">Public sector</button>
+              <button class="network-node network-node--e switch-btn" type="button" data-switch-target="educators">Educators</button>
+            </div>
+            <div class="network-panels">
+              <article class="switch-panel switch-panel--active" data-panel="communities">
+                <h3>Communities hold lived intelligence</h3>
+                <p>Early engagement, transparency, grievance channels, and co-design create stronger implementation and deeper trust.</p>
+              </article>
+              <article class="switch-panel" data-panel="workers">
+                <h3>Workers reveal operational reality</h3>
+                <p>Voice and accountability mechanisms surface risks, unfairness, and improvement opportunities long before reputation data does.</p>
+              </article>
+              <article class="switch-panel" data-panel="civil">
+                <h3>Civil society expands legitimacy</h3>
+                <p>Partners close to vulnerable communities help business avoid blind spots and design more equitable interventions.</p>
+              </article>
+              <article class="switch-panel" data-panel="public">
+                <h3>Public institutions matter for scale</h3>
+                <p>Policy alignment, procurement frameworks, and local economic strategies often determine whether good ideas become shared infrastructure.</p>
+              </article>
+              <article class="switch-panel" data-panel="educators">
+                <h3>Education networks build the pipeline</h3>
+                <p>Schools, colleges, and universities are long-horizon partners for skills, civic capacity, and innovation in place.</p>
+              </article>
+            </div>
+          </div>
+          <div class="speaker-note">
+            Emphasize the shift from “decide first, explain later” to “listen earlier, share power more honestly, build with those closest to the consequences.”
+          </div>
+        </section>
+
+        <section class="slide slide--systems" id="slide-8" data-title="The Systems Iceberg" data-sources="16,21,25">
+          <div class="slide-head">
+            <div class="eyebrow">Structural Leadership</div>
+            <h2>Lasting change happens below the visible surface</h2>
+          </div>
+          <div class="iceberg">
+            <div class="iceberg-top">
+              <div class="iceberg-label">Visible</div>
+              <div class="iceberg-card">Policies</div>
+              <div class="iceberg-card">Programmes</div>
+              <div class="iceberg-card">Pilots</div>
+            </div>
+            <div class="iceberg-water"></div>
+            <div class="iceberg-bottom">
+              <div class="iceberg-label">Structural</div>
+              <div class="iceberg-card iceberg-card--deep">Resource flows</div>
+              <div class="iceberg-card iceberg-card--deep">Relationships</div>
+              <div class="iceberg-card iceberg-card--deep">Power dynamics</div>
+              <div class="iceberg-card iceberg-card--deep">Mental models</div>
+            </div>
+          </div>
+          <div class="speaker-note">
+            This is the moment to deepen the talk. Real community impact requires changing contracts, capital allocation, who gets heard, and what leaders think is normal.
+          </div>
+        </section>
+
+        <section class="slide slide--metrics" id="slide-9" data-title="Social Enterprise at Scale" data-sources="12,13,14">
+          <div class="slide-head">
+            <div class="eyebrow">Global Momentum</div>
+            <h2>Social enterprise is already part of the economic mainstream</h2>
+          </div>
+          <div class="metrics-grid">
+            <article class="metric-panel">
+              <span class="metric-panel__value" data-counter="10" data-suffix="M">0</span>
+              <span class="metric-panel__label">approximate social enterprises worldwide</span>
+            </article>
+            <article class="metric-panel">
+              <span class="metric-panel__value" data-counter="2" data-prefix="$" data-suffix="T">0</span>
+              <span class="metric-panel__label">annual revenue generated</span>
+            </article>
+            <article class="metric-panel">
+              <span class="metric-panel__value" data-counter="200" data-suffix="M">0</span>
+              <span class="metric-panel__label">jobs created globally</span>
+            </article>
+          </div>
+          <div class="callout-banner">
+            Partnership implication: social enterprises are not side actors. They are credible collaborators in innovation, distribution, ecosystem building, and trust.
+          </div>
+          <div class="speaker-note">
+            Use the animated numbers here. They help establish that social enterprise is not marginal and that partnership models are strategically relevant for business leaders.
+          </div>
+        </section>
+
+        <section class="slide slide--cases" id="slide-10" data-title="What The Country Studies Show" data-sources="2,4,5,8,18,19,20">
+          <div class="slide-head">
+            <div class="eyebrow">Applied Lessons</div>
+            <h2>Inclusive business grows when leaders build ecosystems, not just awareness</h2>
+          </div>
+          <div class="case-grid">
+            <article class="case-card">
+              <span class="case-card__region">Global Framework</span>
+              <h3>G20 / UNDP / IFC</h3>
+              <p>Low-income communities can be engaged as workers, suppliers, distributors, retailers, and customers in commercially viable models.</p>
+            </article>
+            <article class="case-card">
+              <span class="case-card__region">Philippines</span>
+              <h3>Participation needs ecosystem support</h3>
+              <p>Awareness, policy, and cross-sector partnerships matter if inclusive business is going to move from isolated examples to a wider field.</p>
+            </article>
+            <article class="case-card">
+              <span class="case-card__region">Brazil</span>
+              <h3>Scale depends on coordination</h3>
+              <p>Enterprises, small business systems, and enabling institutions all need alignment if inclusive models are to thrive beyond pilots.</p>
+            </article>
+          </div>
+          <div class="speaker-note">
+            Explain that vision alone is fragile. These studies show the need for supportive intermediaries, policy clarity, and practical implementation pathways.
+          </div>
+        </section>
+
+        <section class="slide slide--oxford" id="slide-11" data-title="Oxford Opportunity" data-sources="1,23,28,29">
+          <div class="slide-head">
+            <div class="eyebrow">Host-City Relevance</div>
+            <h2>Oxford brings a powerful local lens to a global conversation</h2>
+          </div>
+          <div class="oxford-layout">
+            <div class="oxford-panel oxford-panel--left">
+              <h3>Global excellence</h3>
+              <ul>
+                <li>Innovation capability</li>
+                <li>Knowledge institutions</li>
+                <li>Anchor influence</li>
+                <li>Global visibility</li>
+              </ul>
+            </div>
+            <div class="oxford-panel oxford-panel--center">
+              <div class="oxford-seal">Oxfordshire</div>
+              <span>inclusive</span>
+              <span>fair</span>
+              <span>vibrant</span>
+              <span>culturally rich</span>
+            </div>
+            <div class="oxford-panel oxford-panel--right">
+              <h3>Local test</h3>
+              <ul>
+                <li>Skills and the foundational economy</li>
+                <li>Place-based strategy</li>
+                <li>Productivity with belonging</li>
+                <li>Whole-system collaboration</li>
+              </ul>
+            </div>
+          </div>
+          <div class="speaker-note">
+            Make the venue part of the argument. Oxford exemplifies the challenge of pairing global excellence with locally shared prosperity.
+          </div>
+        </section>
+
+        <section class="slide slide--commitments" id="slide-12" data-title="Seven Leadership Commitments" data-sources="6,9,15,16,21,23,25,26">
+          <div class="slide-head">
+            <div class="eyebrow">Action Agenda</div>
+            <h2>Seven commitments leaders can take back into strategy tomorrow</h2>
+          </div>
+          <ol class="commitments-list">
+            <li>Build impact into the operating model, not the margin of the brand.</li>
+            <li>Treat good jobs as civic and economic infrastructure.</li>
+            <li>Use procurement intentionally to grow local and diverse suppliers.</li>
+            <li>Invite communities into decisions early enough to shape outcomes.</li>
+            <li>Back ecosystems and intermediaries, not only one-off projects.</li>
+            <li>Work below the surface on contracts, capital, power, and assumptions.</li>
+            <li>Judge success partly by whether the surrounding place is stronger.</li>
+          </ol>
+          <div class="speaker-note">
+            This is the landing zone for decision-makers. Keep the pace firm and practical. Each commitment should sound usable, not abstract.
+          </div>
+        </section>
+
+        <section class="slide slide--closing" id="slide-13" data-title="Closing" data-sources="1,6,21,28,29">
+          <div class="closing-panel">
+            <div class="eyebrow">Final Message</div>
+            <h2>
+              The businesses that matter most will not simply become bigger.
+              They will help communities become stronger because they are there.
+            </h2>
+            <p>
+              Leadership, then, is not only the power to move resources.
+              It is the responsibility to shape the conditions in which dignity, resilience,
+              and shared prosperity can flourish.
+            </p>
+            <div class="closing-actions">
+              <a class="action-link" href="../notes/keynote_speech_complete.docx">Download speech</a>
+              <a class="action-link" href="../notes/keynote_research_brief.docx">Download brief</a>
+            </div>
+          </div>
+          <div class="speaker-note">
+            End by returning to the central test: not only whether a firm grew, but whether the surrounding community gained strength, capability, and hope.
+          </div>
+        </section>
+      </main>
+
+      <footer class="deck-controls">
+        <button id="prevSlide" class="nav-btn" type="button" aria-label="Previous slide">←</button>
+        <div class="slide-meta">
+          <span id="slideIndex">1 / 13</span>
+          <span id="slideTitle">Opening Frame</span>
+        </div>
+        <button id="nextSlide" class="nav-btn" type="button" aria-label="Next slide">→</button>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
